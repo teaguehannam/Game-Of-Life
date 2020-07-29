@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 
 // ------ Temp settings ------
-const rows = 10;
-const cols = 10;
+const rows = 25;
+const cols = 25;
 
 // ------ Functions ------
 function initGrid(rows, cols, falsePercent = 0.9) {

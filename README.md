@@ -1,28 +1,14 @@
-# Cellular Automata and Conway's "Game of Life"
-
-Welcome to John Conway's "Game of Life"! 
-This is a computer science classic from 1970, a program that simulates a _cellular automaton_ (plural _automata_). 
-It has connections to all kinds of different aspects of computer science and nature.
-
+# John Conway's "Game of Life"! 
+This is a computer science classic from 1970, 
+a program that simulates a _cellular automaton_ (plural _automata_).
 ![example-patterns](https://media.giphy.com/media/4VVZTvTqzRR0BUwNIH/giphy.gif)
-
 [Wikipedia Page](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns)
 
-## Objectives
+## Features
 
-* Student should be able to create a unique, high-quality project that can be added to a professional portfolio
-* Student should be able to describe the rules of Conway’s “Game of Life”
-* Student should be able to explain what cellular automata are and describe how they are useful in real  life
-* Student should be able to correctly analyze the ‘Turing Completeness’ of Conway’s “Game of Life”
-* Student should be able to implement a visualization of Conway’s “Game of Life” using technologies related to their specific track.
-* Student should be able to utilize "double buffering" to implement the game
-
-## MVP Features
-
-* Grid to display cells. 
-* Cell objects or components that, at a minimum, should have:
-  * Properties
-    * current state: (alive, dead), (black, white)
+(Done) Grid to display cells. 
+(Done) Cell objects or components that, at a minimum, should have:
+    * state: (alive, dead), (black, white)
     * Clickable/Tappable:
       * can be clicked to allow user to setup initial cell configuration
       * should NOT be clickable while simulation is running
@@ -31,12 +17,11 @@ It has connections to all kinds of different aspects of computer science and nat
         switch between alive & dead either because user manually toggled cell before starting simulation, 
         or
         simulation is running and rules of life caused cell to change state
-* An appropriate data structure to hold a grid of cells that is at least
-  25x25. Go as big as you want.
-* Text to display current generation # being displayed
-  * Utilize a timeout function to build the next generation of cells & update the display at the chosen time interval
+(Done) An appropriate data structure to hold a grid of cells that is at least 25x25.
+(Done) Text to display current generation # being displayed
+* Utilize a timeout function to build the next generation of cells & update the display at the chosen time interval
 * Button(s) that start & stop the animation
-* Button to clear the grid
+(Done) Button to clear the grid
 
 Write an algorithm that:
 
@@ -49,15 +34,16 @@ Write an algorithm that:
        1. Swap current and next grids
        2. Repeat until simulation stopped
 * Breaks down above steps into appropriate sub-tasks implemented with helper functions to improve readability
-* Uses double buffering to update grid with next generation.
-* Does something well-documented with the edge of the grid.
+(Done) Uses double buffering to update grid with next generation.
+(Done) Does something well-documented with the edge of the grid.
+* On the main entry point of the application, include a separate section, or link to another page or popup that describes the two main rules (birth & death) of Conway’s Game of Life
 
 ### Custom Features
 
 Implement at least 3 of the following features:
 
 * Create a few sample cell configurations that users can load and run
-* Add an option that creates a random cell configuration that users can run
+(Done) Add an option that creates a random cell configuration that users can run
 * Add additional cell properties, like color or size, and incorporate them into your visualization
 * Allow users to specify the speed of the simulation
 * Provide functionality to manually step through the simulation one generation at a time, as opposed to animating automatically
@@ -66,16 +52,10 @@ Implement at least 3 of the following features:
   and jump to that state, bypassing (i.e. skip ahead _n_ generations).
 * If you have an idea for a custom feature on this list, run it by your TL or instructor
 
-#### About
-
-* On the main entry point of the application, include a separate section
-  or link to another page or popup that describes the two main rules
-  (birth & death) of Conway’s Game of Life
-
 ## Stretch Goals
 
 * Implement 2+ additional custom features, above
-* Deploy your app to a hosting service or, for iOS, to TestFlight (or the App Store!)
+(Done) Deploy your app to a hosting service
 * Write a how-to guide or blog post that walks readers through the work you did to implement your project
 * Expand your simulation into the third dimension. Google `3D Conways Life`.
 * Explore alternate algorithms for finding the nth generation, such as [Hashlife](https://en.wikipedia.org/wiki/Hashlife)
@@ -101,10 +81,10 @@ Implement at least 3 of the following features:
 
 **Your simulation will receive a 2 when it satisfies the following:**
 
-   1. Display includes a text area that shows the current generation of cells being displayed
-   2. Display includes a grid of cells, at least 25x25, that can be toggled to be _alive_ or _dead_
+   (Done) Display includes a text area that shows the current generation of cells being displayed
+   (Done) Display includes a grid of cells, at least 25x25, that can be toggled to be _alive_ or _dead_
    3. Display includes working buttons that start / stop the animation and clear the grid
-   4. Algorithm to generate new generations of cells correctly implemented
+   (Done) Algorithm to generate new generations of cells correctly implemented
    5. At least 3 features from ***Custom Features*** section successfully implemented
    6. Application includes a section outlining the rules to Conway's "Game of Life"
 

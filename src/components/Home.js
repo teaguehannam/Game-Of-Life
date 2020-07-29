@@ -79,7 +79,6 @@ const Buttons = (props) => {
 
 // ------ Home ------
 const Home = () => {
-
 	// --- State ---
 	const [state, setState] = useState({
 		gridFull: initGrid(rows, cols),
@@ -90,7 +89,6 @@ const Home = () => {
 	const selectBox = (row, col) => {
 		let gridCopy = state.gridFull;
 		gridCopy[row][col] = !gridCopy[row][col];
-
 		setState({
 			gridFull: gridCopy,
 			generation: state.generation
@@ -101,7 +99,6 @@ const Home = () => {
 	const playButton = () => {
 		let mainGrid = state.gridFull;
 		let secondGrid = JSON.parse(JSON.stringify(state.gridFull));
-
 		// Game Logic
 		for (let i = 0; i < rows; i++) {
 		  for (let j = 0; j < cols; j++) {
@@ -118,7 +115,6 @@ const Home = () => {
 		    if (!mainGrid[i][j] && count === 3) secondGrid[i][j] = true;
 		  }
 		}
-
 		setState({
 			gridFull: secondGrid,
 			generation: state.generation + 1
@@ -140,7 +136,6 @@ const Home = () => {
 			generation: 0
 		})
 	}
-
 
 	return (
 		<div>

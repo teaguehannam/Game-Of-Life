@@ -1,13 +1,50 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background: rgb(110,3,106);
+  background: linear-gradient(45deg, 
+    rgba(110,3,106,1) 0%, rgba(3,106,110,1) 100%, rgba(3,106,110,1) 100%);
+  background-size: cover;
+} //body
+
+h1, h2, h3, h4, h5, h6 {
+  color: white
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Grid {
+  border: 2px rgba(255,255,255,0.5) solid;
+  line-height: 0;
+  margin: 0px auto;
+  min-width: 500px;
+}// Grid
+
+
+.Box {
+  display: inline-block;       
+  min-width: 50px;
+  min-height: 50px;
+} // box
+
+.off {
+  background: rgb(235,235,235);
+  background: radial-gradient(circle, 
+    rgba(235,235,235,1) 97%, rgba(0,0,0,1) 100%);
 }
+
+.on {
+  background: rgb(15,231,227);
+  background: radial-gradient(circle,
+    rgba(15,231,227,1) 0%, rgba(218,218,218,1) 100%);
+}
+
+.box:hover { 
+  background: rgb(15,231,227);
+  background: radial-gradient(circle, 
+    rgba(15,231,227,1) 30%, rgba(200,200,200,1) 100%);
+}
+
+.box:active {
+  background: rgb(15,231,227);
+  background: radial-gradient(circle, 
+    rgba(27,243,239,1) 30%, rgba(232,232,232,1) 100%);
+}
+

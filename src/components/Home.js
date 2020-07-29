@@ -92,7 +92,8 @@ const Home = () => {
 		gridCopy[row][col] = !gridCopy[row][col];
 
 		setState({
-			gridFull: gridCopy
+			gridFull: gridCopy,
+			generation: state.generation
 		});
 	}
 

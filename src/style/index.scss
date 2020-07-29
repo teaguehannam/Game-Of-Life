@@ -1,50 +1,62 @@
+$numColumns: 10;
+
 body {
-  height: 100vh;
-  background: rgb(110,3,106);
-  background: linear-gradient(45deg, 
-    rgba(110,3,106,1) 0%, rgba(3,106,110,1) 100%, rgba(3,106,110,1) 100%);
-  background-size: cover;
+	margin: 0;
+	height: 100vh;
+	background: rgb(110,3,106);
+	background: linear-gradient(45deg, 
+	rgba(110,3,106,1) 0%, rgba(3,106,110,1) 100%, rgba(3,106,110,1) 100%);
 } //body
 
 h1, h2, h3, h4, h5, h6 {
-  color: white
+	color: white;
 }
 
 .Grid {
-  border: 2px rgba(255,255,255,0.5) solid;
-  line-height: 0;
-  margin: 0px auto;
-  min-width: 500px;
-}// Grid
+	display: grid;
+	width: 80vh;
+	height: 80vh;
+	grid-template-columns: repeat($numColumns, 1fr);
+	padding: 5px;
+	gap: 5px;
+	margin: 5vh auto 0px auto;
+	background: rgba(0,0,0,0.33);
+	box-shadow: 0px 0px 20px 0px black;
+
+	.Box {
+		border: 1px rgb(54,52,54) solid;
+		border-radius: 5%;
+		margin: -1px;
+	    width: 100%;
+	    height: 100%;
+
+	    &:hover { 
+			background: rgba(128,129,132,0.8);
+		}
+
+		&:active {
+			background: orange;
+		}
+
+	} // Box
+
+	.off {
+		background: rgba(5,8,10,0.8);
+	}
+
+	.on {
+		background: rgba(246,250,253,0.8);
+	}
 
 
-.Box {
-  display: inline-block;       
-  min-width: 50px;
-  min-height: 50px;
-} // box
+} // Grid
 
-.off {
-  background: rgb(235,235,235);
-  background: radial-gradient(circle, 
-    rgba(235,235,235,1) 97%, rgba(0,0,0,1) 100%);
-}
 
-.on {
-  background: rgb(15,231,227);
-  background: radial-gradient(circle,
-    rgba(15,231,227,1) 0%, rgba(218,218,218,1) 100%);
-}
 
-.box:hover { 
-  background: rgb(15,231,227);
-  background: radial-gradient(circle, 
-    rgba(15,231,227,1) 30%, rgba(200,200,200,1) 100%);
-}
 
-.box:active {
-  background: rgb(15,231,227);
-  background: radial-gradient(circle, 
-    rgba(27,243,239,1) 30%, rgba(232,232,232,1) 100%);
-}
+
+
+
+
+
 

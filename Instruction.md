@@ -90,7 +90,7 @@ Implement at least 3 of the following features:
 
 (Done) Good file names that let a reader quickly determine which file is where.
 
-* Good `README.md` files that help the reader with code navigation and installation.
+(Done) Good `README.md` files that help the reader with code navigation and installation.
   * What is the project?
   * What problem does it solve?
   * Exceptional difficulties and solutions, if any.

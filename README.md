@@ -32,7 +32,7 @@ a program that simulates a _cellular automaton_ (plural _automata_).
 Write an algorithm that:
 
 (Done) Implements the following basic steps:
-  * For each cell in the current generation's grid:
+  For each cell in the current generation's grid:
     1. Examine state of all eight neighbors 
       (it's up to you whether you want cells to wrap around the grid and consider cells on the other side or not)
     2. Apply rules of life to determine if this cell will change states
@@ -46,7 +46,7 @@ Write an algorithm that:
 
 (Done) Does something well-documented with the edge of the grid.
 
-* On the main entry point of the application, include a separate section, or link to another page or popup that describes the two main rules (birth & death) of Conway’s Game of Life
+(Done) On the main entry point of the application, include a separate section, or link to another page or popup that describes the two main rules (birth & death) of Conway’s Game of Life
 
 
 ## Custom Features
@@ -59,7 +59,7 @@ Implement at least 3 of the following features:
 
 * Add additional cell properties, like color or size, and incorporate them into your visualization
 
-* Allow users to specify the speed of the simulation
+(Done) Allow users to specify the speed of the simulation
 
 (Done) Provide functionality to manually step through the simulation one generation at a time, as opposed to animating automatically
 
@@ -73,7 +73,7 @@ Implement at least 3 of the following features:
 
 **Your simulation will receive a 3 when it satisfies all requirements AND implements a stretch goal**
 
-(Done) Implement 2+ additional custom features
+* Implement 2+ additional custom features
 
 (Done) Deploy your app to a hosting service
 

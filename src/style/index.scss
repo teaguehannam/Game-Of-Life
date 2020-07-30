@@ -1,57 +1,131 @@
-$numColumns: 25;
-
 body {
 	margin: 0;
 	height: 100vh;
 	background: rgb(110,3,106);
 	background: linear-gradient(45deg, 
 	rgba(110,3,106,1) 0%, rgba(3,106,110,1) 100%, rgba(3,106,110,1) 100%);
+
+	h1, h2, h3, h4, h5, h6 {
+		color: white;
+	}
+
+	.App {
+		text-align: center;
+		transition: 5s;
+
+		.Header {
+			height: 3vh;
+			width: 100vw;
+			display: flex;
+			justify-content: space-between;
+
+			.Box{
+				background: rgba(0,0,0,0.5);
+				padding: 16px 9px;
+				line-height: 0.5vh;
+
+				h2{
+					color: rgba(166,59,162,1);
+				}
+
+				h3{
+					color: rgba(49,152,156,1);
+				}
+			}
+		}
+			
+		.Grid {
+			border: 1px black solid;
+			display: grid;
+			width: 80vh;
+			height: 80vh;
+			gap: 4px;
+			padding: 18px 32px;
+			margin: -1vh auto 0px auto;
+			background: rgba(0,2,2,0.33);
+			box-shadow: 0px 0px 20px 0px black;
+			transition: 0.6s;
+
+			&:hover{
+				gap: 1px;
+			}
+
+			.Box {
+				
+				border-radius: 5%;
+				width: 100%;
+			    height: 100%;
+
+			    &:hover { 
+			    	opacity: 1;
+					background: rgba(128,129,132,0.4);
+				}
+
+				&:active {
+					background: rgba(222,226,228,0.9);
+				}
+
+			} // Box
+
+			.off {
+				opacity: 0.2;
+				border: 1px rgba(255,255,255,0.2) solid;
+				transition: 0.1s;
+			}
+
+			.on {
+				background: rgba(252,250,252,0.8);
+				transition: 0.1s;
+			}
+		} // Grid
+
+		.BottomBar {
+			background: rgba(0,0,0,0.33);
+			margin: 20px 10vw;
+			box-shadow: 0px 0px 20px 0px black;
+			display: flex;
+			justify-content: space-around;
+			height: 5vh;
+			width: 80vw;
+			min-width: 732px;
+			position: absolute;
+			bottom: 0;
+
+			&:hover{
+				color: black;
+			}
+
+			button{
+				background-color: rgba(0,12,0,0.2);
+				border-radius: 10px;
+				border: 0px rgb(128,124,126) solid;
+				color: white;
+				width: 122px;
+				height: 4vh;
+				margin-top: 0.5vh;
+				transition: 0.3s;
+
+				&:active{
+					background-color: rgba(128,127,129,0.8);
+				}
+
+				&:hover{
+					cursor: pointer;
+					height: 5.5vh;
+					margin-top: -0.5vh;
+					margin-left: -1px;
+					padding: -10px 0px;
+					width: 124px;
+					background-color: rgba(0,12,0,0.4);
+				}
+
+
+			}// button
+		} // BottomBar
+
+	} // App
+
 } //body
-
-h1, h2, h3, h4, h5, h6 {
-	color: white;
-}
-
-.Grid {
-	display: grid;
-	width: 80vh;
-	height: 80vh;
-	grid-template-columns: repeat($numColumns, 1fr);
-	padding: 5px;
-	gap: 5px;
-	margin: 5vh auto 0px auto;
-	background: rgba(0,0,0,0.33);
-	box-shadow: 0px 0px 20px 0px black;
-
-	.Box {
-		border: 1px rgb(54,52,54) solid;
-		border-radius: 5%;
-		margin: -1px;
-	    width: 100%;
-	    height: 100%;
-
-	    &:hover { 
-			background: rgba(128,129,132,0.8);
-		}
-
-		&:active {
-			background: orange;
-		}
-
-	} // Box
-
-	.off {
-		background: rgba(5,8,10,0.8);
-	}
-
-	.on {
-		background: rgba(246,250,253,0.8);
-	}
-
-
-} // Grid
-
-
 
 
 

@@ -1,8 +1,8 @@
 # John Conway's "Game of Life"! 
+[Wikipedia Page](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns)
 This is a computer science classic from 1970, 
 a program that simulates a _cellular automaton_ (plural _automata_).
 ![example-patterns](https://media.giphy.com/media/4VVZTvTqzRR0BUwNIH/giphy.gif)
-[Wikipedia Page](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Examples_of_patterns)
 
 
 ## Features
@@ -23,16 +23,16 @@ a program that simulates a _cellular automaton_ (plural _automata_).
 
 (Done) Text to display current generation # being displayed
 
-* Utilize a timeout function to build the next generation of cells & update the display at the chosen time interval
+(Done) Utilize a timeout function to build the next generation of cells & update the display at the chosen time interval
 
-* Button(s) that start & stop the animation
+(Done) Button(s) that start & stop the animation
 
 (Done) Button to clear the grid
 
 Write an algorithm that:
 
-* Implements the following basic steps:
-  * For each cell in the current generation's grid:
+(Done) Implements the following basic steps:
+  For each cell in the current generation's grid:
     1. Examine state of all eight neighbors 
       (it's up to you whether you want cells to wrap around the grid and consider cells on the other side or not)
     2. Apply rules of life to determine if this cell will change states
@@ -40,16 +40,16 @@ Write an algorithm that:
        1. Swap current and next grids
        2. Repeat until simulation stopped
 
-* Breaks down above steps into appropriate sub-tasks implemented with helper functions to improve readability
+(Done) Breaks down above steps into appropriate sub-tasks implemented with helper functions to improve readability
 
 (Done) Uses double buffering to update grid with next generation.
 
 (Done) Does something well-documented with the edge of the grid.
 
-* On the main entry point of the application, include a separate section, or link to another page or popup that describes the two main rules (birth & death) of Conway’s Game of Life
+(Done) On the main entry point of the application, include a separate section, or link to another page or popup that describes the two main rules (birth & death) of Conway’s Game of Life
 
 
-### Custom Features
+## Custom Features
 
 Implement at least 3 of the following features:
 
@@ -59,16 +59,14 @@ Implement at least 3 of the following features:
 
 * Add additional cell properties, like color or size, and incorporate them into your visualization
 
-* Allow users to specify the speed of the simulation
+(Done) Allow users to specify the speed of the simulation
 
-* Provide functionality to manually step through the simulation one generation at a time, as opposed to animating automatically
+(Done) Provide functionality to manually step through the simulation one generation at a time, as opposed to animating automatically
 
 * Allow users to change the dimension of the grid being displayed
 
 * Given a specific generation, calculate the configuration of cells at that point in time, 
   and jump to that state, bypassing (i.e. skip ahead _n_ generations).
-
-* If you have an idea for a custom feature on this list, run it by your TL or instructor
 
 
 ## Stretch Goals
@@ -86,26 +84,18 @@ Implement at least 3 of the following features:
 * Explore alternate algorithms for finding the nth generation, such as [Hashlife](https://en.wikipedia.org/wiki/Hashlife)
 
 
-### Code
+## Repo
 
-* Make your code sharp and professional.
+(Done) Well-organized directories.
 
-* Comments that say what part of the problem a function or block of code solves.
+(Done) Good file names that let a reader quickly determine which file is where.
 
-* Only comment on what a single line does if that single line is unclear.
-
-* Blank lines to visually break up logical sections of code, analogous to paragraph breaks.
-
-
-### Repo
-
-* Well-organized directories.
-* Good file names that let a reader quickly determine which file is where.
 * Good `README.md` files that help the reader with code navigation and installation.
   * What is the project?
   * What problem does it solve?
   * Exceptional difficulties and solutions, if any.
   * TODO list/wishlist. What do you want to add to it if you have more time?
+
 
 ## Rubric
 

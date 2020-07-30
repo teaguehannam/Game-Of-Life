@@ -91,8 +91,8 @@ const Home = () => {
 				oneStep={oneStep}
 				clear={clear}
 				randomSeed={randomSeed}
-				increaseSpeed={increaseSpeed}
 				decreaseSpeed={decreaseSpeed}
+				increaseSpeed={increaseSpeed}
 			/>
 		</div>
 	);

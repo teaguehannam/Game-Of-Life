@@ -14,8 +14,8 @@ const Buttons = (props) => {
 			<button onClick={props.oneStep}>Single Step</button>
 			<button onClick={props.clear}>Clear</button>
 			<button onClick={props.randomSeed}>Random</button>
-			<button onClick={props.increaseSpeed}>Faster!</button>
 			<button onClick={props.decreaseSpeed}>Slower</button>
+			<button onClick={props.increaseSpeed}>Faster!</button>
 		</div>
 	)
 

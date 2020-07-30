@@ -1,7 +1,6 @@
 // Start Main App (2nd level)
 import React from 'react';
 import { Route } from 'react-router-dom';
-import './style/App.scss';
 
 // Components
 import Home from './components/Home.js'

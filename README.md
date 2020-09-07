@@ -3,7 +3,6 @@
 is a cellular automation (algorithim) created by mathematician John Horton Conway in 1970. 
 The game takes place on a two-diminsional grid, and each box or cell can either be live or dead. 
 The state of the cell's neighbors decides whether the current cell will be live or dead, on the next step in time. 
-The game can have chaotic unpredictable outcomes, and self-replicating structures, all within a simple set of rules.
 
  ******
 

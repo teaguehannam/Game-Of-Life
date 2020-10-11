@@ -16,5 +16,4 @@ The state of the cell's neighbors decides whether the current cell will be live 
 
 ### Features I'd add
 
-* Don't kill neighbors
-* 0(log n) recursion in game logic
+* 0(log n) game logic
